@@ -830,7 +830,7 @@ $(foreach lt,$(ALL_LINK_TYPES),\
       $(call link-type-missing,$(lt),$(d)))))
 
 ifdef link_type_error
-endif
+endif ($(TARGET_DEVICE),hydrogen)
 
 # The intermediate filename for link type rules
 #
